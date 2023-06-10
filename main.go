@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"githum.com/wujuno/learngo/accounts"
+	"github.com/wujuno/learngo/accounts"
 )
 
 
