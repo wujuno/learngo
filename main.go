@@ -4,7 +4,8 @@ import "fmt"
 
 
 func main() {
-	names := []string{"nico", "lynn", "dal"}
-	names = append(names, "flynn")
-	fmt.Println(names)
+	junho := map[string]string{"name": "junho", "age": "29"}
+	for key, value := range junho {
+		fmt.Println(key, value)
+	}
 }
