@@ -3,12 +3,16 @@ package main
 import (
 	"fmt"
 
-	"github.com/wujuno/learngo/accounts"
+	"github.com/wujuno/learngo/mydict"
 )
 
 
 func main() {
-	account := accounts.NewAccount("junho")
-	account.Deposit(10)
-	fmt.Println(account)
+	dictionary := mydict.Dictionary{"first": "First word"}
+	definition, err := dictionary.Search("second")
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(definition)
+	}
 }
